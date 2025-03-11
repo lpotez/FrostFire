@@ -1,0 +1,99 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+###############################
+# Core EditorConfig Options   #
+###############################
+# All files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Code files
+[*.{cpp,hpp,h,c}]
+indent_size = 2
+
+###############################
+# C++ Coding Conventions     #
+###############################
+[*.{cpp,hpp,h}]
+
+# Organize includes
+cpp_sort_system_headers_first = true
+
+# Naming conventions
+cpp_naming_rule.constants.symbols = constants
+cpp_naming_rule.constants.style = PascalCase
+cpp_naming_symbols.constants.applicable_kinds = variable
+cpp_naming_symbols.constants.required_modifiers = const
+
+# Class member naming
+cpp_naming_rule.private_members.symbols = private_members
+cpp_naming_rule.private_members.style = camelCase
+cpp_naming_symbols.private_members.applicable_kinds = variable
+cpp_naming_symbols.private_members.applicable_accessibilities = private
+
+# Public member functions
+cpp_naming_rule.public_methods.symbols = public_methods
+cpp_naming_rule.public_methods.style = PascalCase
+cpp_naming_symbols.public_methods.applicable_kinds = method
+cpp_naming_symbols.public_methods.applicable_accessibilities = public
+
+# Private member functions
+cpp_naming_rule.private_methods.symbols = private_methods
+cpp_naming_rule.private_methods.style = camelCase
+cpp_naming_symbols.private_methods.applicable_kinds = method
+cpp_naming_symbols.private_methods.applicable_accessibilities = private
+
+# Function parameters
+cpp_naming_rule.parameters.symbols = parameters
+cpp_naming_rule.parameters.style = camelCase
+cpp_naming_symbols.parameters.applicable_kinds = parameter
+
+# Local variables
+cpp_naming_rule.local_variables.symbols = local_variables
+cpp_naming_rule.local_variables.style = camelCase
+cpp_naming_symbols.local_variables.applicable_kinds = local
+
+# Formatting rules
+cpp_new_line_before_open_brace = all
+cpp_new_line_before_else = true
+cpp_new_line_before_catch = true
+cpp_new_line_before_while = true
+
+# Indentation preferences
+cpp_indent_case_contents = true
+cpp_indent_switch_labels = true
+cpp_indent_preprocessor_directives = leftmost
+
+# Space preferences
+cpp_space_after_cast = false
+cpp_space_after_comma = true
+cpp_space_after_keywords = true
+cpp_space_around_binary_operators = true
+cpp_space_around_assignment_operator = true
+cpp_space_pointer_reference_alignment = right
+
+# Braces and blocks
+cpp_braces_same_line = false
+cpp_keep_simple_blocks_on_one_line = false
+cpp_keep_simple_function_on_one_line = false
+
+# Modern C++ features
+cpp_use_auto = true
+cpp_use_nullptr = true
+cpp_use_override = true
+cpp_use_uniform_initialization = true
+
+# Include organization
+cpp_include_cleanup = true
+cpp_organize_includes_on_format = true
+
+# Other preferences
+cpp_max_line_length = 100
+cpp_align_multiline_chained_methods = true
+cpp_align_multiline_binary_operator = true
+cpp_align_multiline_calls = true
+cpp_align_multiline_template_params = true

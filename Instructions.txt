@@ -1,0 +1,53 @@
+﻿Définir EngineTest en projet de démarrage
+
+Lancer le programme : F5
+
+Il est conseillé de lancer le projet en mode Release, notamment pour permettre de meilleurs performances durant le jeux ainsi que pour le chargement de la map.
+
+Le programme se lance avec la vue derrière le véhicule.
+
+Trois caméras disponibles : 
+	- troisième personne (à l'arrière du véhicule)
+	- première personne (devant le véhicule)
+	- freeCam (utilisée surtout pour nous pour le DEBUG)
+
+Pour passer de la caméra troisième personne à la caméra première personne (ou inversement), appuyer sur F5.
+Pour passer des caméras à la freeCam (ou inversement), appuyer sur TAB (uniquement en DEBUG).
+En debug, on peut appuyer sur f6 pour ouvrir un menu de debug, utilisé pour visionner l'octree.
+
+Pour mettre le jeu en pause ou reprendre, appuyer sur ECHAP.
+
+Contrôles du véhicule : 
+	- → : déplacer la voiture vers la droite
+	- ← : déplacer la voiture vers la gauche
+	- ↑ : déplacer la voiture vers l'avant
+	- ↓ : déplacer la voiture vers l'arrière
+
+	- C : revenir au précédent checkpoint
+	- W : permettra de déraper et en relâchant octroiera une boost de vitesse
+	- X : permet de remettre la voiture sur les roues	
+	- Space : revenir au point de départ et recommencer le chronomètre
+
+Contrôles de la caméra (en free cam) :
+	- Le clique droit associer fera suivre le curseur à la camera 
+
+	- Z : déplacer la caméra vers l'avant
+	- D : déplacer la caméra vers la droite
+	- Q : déplacer la caméra vers la gauche
+	- S : déplacer la caméra vers l'arrière
+
+	- A : descendre la caméra (en qwerty)
+	- E : monter la caméra
+
+	- R : réinitialiser la caméra
+
+	- La mollette de la souris permet de jouer avec la vitesse de la caméra 
+	
+
+Voici la liste des techniques utilisé :
+
+- Normal/Bump Mapping : 1 point  
+- Transparents : 1 point  
+- Ombres (Shadow Map) : 2 points  
+- Vignette : 1 point  
+- PBR : 3 points

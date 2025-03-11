@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\D3DResources.cpp"/>
+    <ClCompile Include="DDSTextureLoader11.cpp"/>
+    <ClCompile Include="Debug\DebugOctreeCategory.cpp"/>
+    <ClCompile Include="Debug\DebugSelectionManager.cpp"/>
+    <ClCompile Include="ECS\components\mesh\MeshComponent.cpp"/>
+    <ClCompile Include="ECS\components\physics\ColliderComponent.cpp"/>
+    <ClCompile Include="ECS\components\physics\RigidBodyComponent.cpp"/>
+    <ClCompile Include="ECS\components\rendering\BaseRendererComponent.cpp"/>
+    <ClCompile Include="ECS\components\rendering\PBRRenderer.cpp"/>
+    <ClCompile Include="ECS\components\rendering\SpriteRenderer.cpp"/>
+    <ClCompile Include="ECS\components\rendering\TextRendererComponent.cpp"/>
+    <ClCompile Include="ECS\components\rendering\UIBaseRendererComponent.cpp"/>
+    <ClCompile Include="ECS\components\rendering\UIRendererComponent.cpp"/>
+    <ClCompile Include="ECS\components\scripts\ScriptComponent.cpp"/>
+    <ClCompile Include="ECS\components\transform\TransformComponent.cpp"/>
+    <ClCompile Include="ECS\core\World.cpp"/>
+    <ClCompile Include="ECS\systems\debug\DebugSystem.cpp"/>
+    <ClCompile Include="ECS\systems\LightSystem.cpp"/>
+    <ClCompile Include="ECS\systems\PhysicsSystem.cpp"/>
+    <ClCompile Include="ECS\systems\RenderingSystem.cpp"/>
+    <ClCompile Include="ECS\systems\rendering\GBuffer.cpp"/>
+    <ClCompile Include="Font\FontManager.cpp"/>
+    <ClCompile Include="ImGui\imgui.cpp"/>
+    <ClCompile Include="ImGui\imgui_draw.cpp"/>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp"/>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp"/>
+    <ClCompile Include="ImGui\imgui_tables.cpp"/>
+    <ClCompile Include="ImGui\imgui_widgets.cpp"/>
+    <ClCompile Include="InputManager.cpp"/>
+    <ClCompile Include="DispositifD3D11.cpp"/>
+    <ClCompile Include="Math\Frustum.cpp"/>
+    <ClCompile Include="Scene.cpp"/>
+    <ClCompile Include="Scene\Octree.cpp"/>
+    <ClCompile Include="Shaders\features\PBRFeature.cpp"/>
+    <ClCompile Include="Shaders\RenderShader.cpp"/>
+    <ClCompile Include="Shaders\ShaderManager.cpp"/>
+    <ClCompile Include="Shaders\ShaderVariant.cpp"/>
+    <ClCompile Include="Shaders\ShaderVariantManager.cpp"/>
+    <ClCompile Include="Shaders\techniques\ShaderTechnique.cpp"/>
+    <ClCompile Include="Shaders\techniques\ShaderTechniqueFactory.cpp"/>
+    <ClCompile Include="Shaders\techniques\GlobaleTechnique.cpp"/>
+    <ClCompile Include="Shaders\techniques\TextTechnique.cpp"/>
+    <ClCompile Include="Shaders\VariantCache.cpp"/>
+    <ClCompile Include="TextureManager.cpp"/>
+    <ClCompile Include="Clock.cpp"/>
+    <ClCompile Include="Mesh.cpp"/>
+    <ClCompile Include="MeshFactory.cpp"/>
+    <ClCompile Include="Engine.cpp"/>
+    <ClCompile Include="EngineWindows.cpp"/>
+    <ClCompile Include="stdafx.cpp"/>
+    <ClCompile Include="Texture.cpp"/>
+    <ClCompile Include="Textures\FallbackTextures.cpp"/>
+    <ClInclude Include="AudioMixer.h" />
+    <ClInclude Include="AudioSystem.h"/>
+    <ClInclude Include="BaseScene.h"/>
+    <ClInclude Include="CameraContext.h"/>
+    <ClInclude Include="Core\D3DResources.h"/>
+    <ClInclude Include="Core\PhysicsResources.h"/>
+    <ClInclude Include="DDSTextureLoader11.h"/>
+    <ClInclude Include="Debug\DebugSelectionManager.h"/>
+    <ClInclude Include="ECS\components\ButtonComponent.h"/>
+    <ClInclude Include="ECS\components\ButtonSoundComponent.h"/>
+    <ClInclude Include="ECS\components\CameraComponent.h"/>
+    <ClInclude Include="ECS\components\LightComponent.h"/>
+    <ClInclude Include="ECS\components\mesh\MeshComponent.h"/>
+    <ClInclude Include="ECS\components\physics\ColliderComponent.h"/>
+    <ClInclude Include="ECS\components\physics\RigidBodyComponent.h"/>
+    <ClInclude Include="ECS\components\rendering\BaseRendererComponent.h"/>
+    <ClInclude Include="ECS\components\rendering\PBRRenderer.h"/>
+    <ClInclude Include="ECS\components\rendering\SpriteRenderer.h"/>
+    <ClInclude Include="ECS\components\rendering\TextRendererComponent.h"/>
+    <ClInclude Include="ECS\components\rendering\UIBaseRendererComponent.h"/>
+    <ClInclude Include="ECS\components\rendering\UIRendererComponent.h"/>
+    <ClInclude Include="ECS\components\scripts\ScriptComponent.h"/>
+    <ClInclude Include="ECS\components\SliderComponent.h"/>
+    <ClInclude Include="ECS\components\transform\RectTransformComponent.h"/>
+    <ClInclude Include="ECS\components\transform\TransformComponent.h"/>
+    <ClInclude Include="ECS\core\Component.h"/>
+    <ClInclude Include="ECS\core\ComponentManager.h"/>
+    <ClInclude Include="ECS\core\ComponentPool.h"/>
+    <ClInclude Include="ECS\core\Entity.h"/>
+    <ClInclude Include="ECS\core\System.h"/>
+    <ClInclude Include="ECS\core\World.h"/>
+    <ClInclude Include="ECS\systems\ButtonSystem.h"/>
+    <ClInclude Include="ECS\systems\CameraSystem.h"/>
+    <ClInclude Include="ECS\systems\debug\DebugSystem.h"/>
+    <ClInclude Include="ECS\systems\LightSystem.h"/>
+    <ClInclude Include="ECS\systems\PauseManagerSystem.h"/>
+    <ClInclude Include="ECS\systems\PhysicsSystem.h"/>
+    <ClInclude Include="ECS\systems\RenderingSystem.h"/>
+    <ClInclude Include="ECS\systems\rendering\GBuffer.h"/>
+    <ClInclude Include="ECS\systems\ScriptSystem.h"/>
+    <ClInclude Include="ECS\systems\SliderSystem.h"/>
+    <ClInclude Include="Font\Font.h"/>
+    <ClInclude Include="Font\FontManager.h"/>
+    <ClInclude Include="ImGui\imconfig.h"/>
+    <ClInclude Include="ImGui\imgui.h"/>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h"/>
+    <ClInclude Include="ImGui\imgui_impl_win32.h"/>
+    <ClInclude Include="ImGui\imgui_internal.h"/>
+    <ClInclude Include="ImGui\imstb_rectpack.h"/>
+    <ClInclude Include="ImGui\imstb_textedit.h"/>
+    <ClInclude Include="ImGui\imstb_truetype.h"/>
+    <ClInclude Include="InputManager.h"/>
+    <ClInclude Include="Dispositif.h"/>
+    <ClInclude Include="DispositifD3D11.h"/>
+    <ClInclude Include="FBXData.h"/>
+    <ClInclude Include="FBXEntityBuilder.h"/>
+    <ClInclude Include="Math\AABB.h"/>
+    <ClInclude Include="Math\Frustum.h"/>
+    <ClInclude Include="Math\Raycaster.h"/>
+    <ClInclude Include="Scene.h"/>
+    <ClInclude Include="SceneManager.h"/>
+    <ClInclude Include="Scene\Octree.h"/>
+    <ClInclude Include="Shaders\features\BaseShaderFeature.h"/>
+    <ClInclude Include="Shaders\features\PBRFeature.h"/>
+    <ClInclude Include="Shaders\features\FeatureMetadata.h"/>
+    <ClInclude Include="Shaders\features\RenderPass.h"/>
+    <ClInclude Include="Shaders\features\ShaderFeatureFactory.h"/>
+    <ClInclude Include="Shaders\RenderShader.h"/>
+    <ClInclude Include="Shaders\ShaderManager.h"/>
+    <ClInclude Include="Shaders\ShaderVariant.h"/>
+    <ClInclude Include="Shaders\ShaderVariantManager.h"/>
+    <ClInclude Include="Shaders\techniques\ShaderTechnique.h"/>
+    <ClInclude Include="Shaders\techniques\ShaderTechniqueFactory.h"/>
+    <ClInclude Include="Shaders\techniques\GlobaleTechnique.h"/>
+    <ClInclude Include="Shaders\techniques\TextTechnique.h"/>
+    <ClInclude Include="Shaders\VariantCache.h"/>
+    <ClInclude Include="Shaders\VertexLayoutDesc.h"/>
+    <ClInclude Include="TextureManager.h"/>
+    <ClInclude Include="Clock.h"/>
+    <ClInclude Include="Mesh.h"/>
+    <ClInclude Include="MeshFactory.h"/>
+    <ClInclude Include="MeshManager.h"/>
+    <ClInclude Include="MeshNode.h"/>
+    <ClInclude Include="Engine.h"/>
+    <ClInclude Include="EngineWindows.h"/>
+    <ClInclude Include="resource.h"/>
+    <ClInclude Include="Singleton.h"/>
+    <ClInclude Include="stdafx.h"/>
+    <ClInclude Include="Texture.h"/>
+    <ClInclude Include="Textures\FallbackTextures.h"/>
+    <ClInclude Include="Types.h"/>
+    <ClInclude Include="util.h"/>
+    <ClInclude Include="Utils\ErrorLogger.h"/>
+    <ClInclude Include="Vertex.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine.rc"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Utils\WStringUtils.h"/>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{60db73ed-6940-492c-a7dc-0b6869a1d1a6}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)includes\Effects11;$(SolutionDir)includes\FBXSdk;$(SolutionDir)includes\PhysX;$(SolutionDir);%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <CallingConvention>FastCall</CallingConvention>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)</PrecompiledHeaderOutputFile>
+      <DisableSpecificWarnings>4530</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\FBXSdk\x64\debug;$(SolutionDir)lib\PhysX\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)lib\dinput8.lib;$(SolutionDir)lib\Effects11d-mt.lib;libfbxsdk-mt.lib;zlib-mt.lib;libxml2-mt.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;PhysXCooking_64.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)includes\Effects11;$(SolutionDir)includes\FBXSdk;$(SolutionDir)includes\PhysX;$(SolutionDir);%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CallingConvention>FastCall</CallingConvention>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4530</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\FBXSdk\x64\release;$(SolutionDir)lib\PhysX\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)lib\dinput8.lib;$(SolutionDir)lib\Effects11-mt.lib;libfbxsdk-mt.lib;zlib-mt.lib;libxml2-mt.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;PhysXCooking_64.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

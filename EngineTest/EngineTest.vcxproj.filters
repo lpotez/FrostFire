@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="CheckpointScript.h" />
+    <ClCompile Include="LoadingScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="CarDynamicScript.h" />
+    <ClInclude Include="VictoryScript.h" />
+    <ClInclude Include="ScriptSpeedometer.h" />
+    <ClInclude Include="ScriptTime.h" />
+    <ClInclude Include="FreeCameraScript.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="MenuScene.h" />
+    <ClInclude Include="CameraScript.h" />
+    <ClInclude Include="ScriptPauseManager.h" />
+    <ClInclude Include="TestScene.h" />
+    <ClInclude Include="LoadingScene.h" />
+    <ClInclude Include="ScriptDecompte.h" />
+    <ClInclude Include="BoostScript.h" />
+    <ClInclude Include="DeadZoneScript.h" />
+    <ClInclude Include="AreaSpecificsScript.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EngineTest.rc" />
+    <ResourceCompile Include="..\Engine\Engine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\shaders\LightingCommon.hlsli" />
+    <Text Include="Assets\shaders\TransparencyPass.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shaders\Debug.fx" />
+    <None Include="Assets\shaders\FinalPass.fx" />
+    <None Include="Assets\shaders\GBufferPass.fx" />
+    <None Include="Assets\shaders\LightingPass.fx" />
+    <None Include="Assets\shaders\ShadowPass.fx" />
+    <None Include="Assets\shaders\SkyboxPass.fx" />
+    <None Include="Assets\shaders\TextPass.fx" />
+    <None Include="Assets\shaders\UIPass.fx" />
+    <None Include="Assets\shaders\postprocess.fx" />
+  </ItemGroup>
+</Project>
